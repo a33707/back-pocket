@@ -1,5 +1,8 @@
 @charset "UTF-8";
-* {box-sizing: border-box;}
+* {
+	font-family: '맑은고딕',MalgunGothic,AppleSDGothicNeo-Medium,HelveticaNeue,sans-serif;
+	box-sizing: border-box;
+}
 body.login {background-color: #000;}
 a, input, button {border-radius: 4px;}
 button {padding: 0; border: 1px solid #333;}
@@ -59,7 +62,7 @@ table tr td {border-left: 1px solid #eee; border-bottom: 1px solid #999; vertica
 .wrap_account .btn_create {background-color: #FFC800;}
 .txt_copyright.login {color: #fff; position: fixed; left: 0; right: 0; bottom: 40px;}
 .txt_copyright {font-size: 12px; text-align: center; margin: 0 auto;}
-.container+.txt_copyright {margin-top: 32px;}
+.container+.txt_copyright {margin-top: 32px; margin-bottom: 32px;}
 .header_page {padding: 32px 0 56px; margin-bottom: -24px; background-color: #000;}
 .header_page .img_logo {margin: 0 auto; display: block; width: 64px;}
 .header_page .btn_menu {position: absolute; top: 16px; left: 16px; border:none; background:none; width: 32px; height: 32px; padding: 0;}
@@ -101,7 +104,7 @@ table tr td {border-left: 1px solid #eee; border-bottom: 1px solid #999; vertica
 .width_40 {width: 40% !important;}
 .width_60 {width: 60% !important;}
 .width_70 {width: 70% !important;}
-.fix_width {width: 360px; margin: 0 auto; display: block;}
+.fix_width {width: 336px; margin: 0 auto; display: block;}
 .scroll_width {overflow-x: scroll;}
 .container {border-top-right-radius: 24px; border-top-left-radius: 24px; padding-bottom: 24px; margin-bottom: -24px; background-color: #fff; padding: 24px 12px;}
 
@@ -183,7 +186,7 @@ body.menu {background-color: #323232;}
 .container.write .write_item.subject {margin-bottom: 18px;}
 .container.write .write_item.attachments input {padding: 1px 0;}
 .container.write .tit {float: left; width: 100px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; padding: 4px 8px;}
-.container.write .write_item.contents .tit {height: 329px; line-height: 329px;}
+.container.write .write_item.contents .tit {height: 347px; line-height: 347px;}
 .container.write .desc,
 .container.write .desc textarea {border: 1px solid #ccc; border-radius: 4px; font-size: 14px; padding: 4px 8px; width: calc(100% - 104px); float: right; resize: none;}
 .container.write .desc.tools {height: 27px; margin-bottom: 4px;}
@@ -239,9 +242,9 @@ body.menu {background-color: #323232;}
 
 .wrap_daterange {margin: 4px 0;}
 .wrap_daterange:after {clear: both; content: ""; display: block;}
-.wrap_daterange .btn_selrange {float: left; padding: 0;}
+.wrap_daterange .btn_selrange {float: left; padding: 0; margin: 0;}
 .wrap_daterange .btn_selrange img {width: 24px; height: 24px; display: block;}
-.wrap_daterange .txt_date {width: 141.5px; border: none; float: left; margin: 0 4px; padding: 5px 8px; text-align: center;}
+.wrap_daterange .txt_date {width: 128px; border: none; float: left; margin: 0 4px; padding: 5px 8px; text-align: center;}
 
 .wrap_table_function {padding: 0 12px; margin-bottom: 12px;}
 .wrap_chart_function {}
