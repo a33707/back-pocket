@@ -139,8 +139,8 @@ body.menu {background-color: #323232;}
 .menu_btns button.menu_lout .tit {color: #444;}
 .menu_btns button:hover {background-color: #eee;}
 .menu_btns button:after {clear: both; content: ""; display: block;}
-.menu_btns button .ic_menus {width: 24px; height: 24px; float: left; margin: 8px 8px 8px 0;}
-.menu_btns button .tit {float: left; font-size: 16px; line-height: 41px; color: #666;}
+.menu_btns button .ic_menus {width: 24px; /*height: 24px;*/ float: left; margin: 8px 8px 8px 0;}
+.menu_btns button .tit {float: left; font-size: 16px; line-height: 44px; color: #666;}
 .menu_btns button .ic_right {float: right; width: 24px; height: 24px; margin: 8px 4px 8px 0;}
 .wrap_share {padding: 24px 14px;}
 .wrap_share .btn_share {width: 100%; height: 48px; border: none; background-color: #FFC800; padding: 0;}
@@ -160,7 +160,7 @@ body.menu {background-color: #323232;}
 .btns_share_place button {border:none; background-color: #fff; width: 33.333%; float: left;}
 .btns_share_place button img {width: 72px; height: 72px;}
 
-.notice .functions {}
+.notice .functions {margin-top: 6px;}
 .notice .functions:after {clear: both; content: ""; display: block;}
 .notice .functions > select {border: none; width: 49%; height: 26px; margin-right: 2%; float: left; padding: 0;}
 .notice .functions > input {border: none; width: 49%; height: 26px; float: left; padding: 0;}
