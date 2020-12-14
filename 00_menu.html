@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>::Bexfor::</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" type="text/css" href="./style/reset.css">
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
-</head>
-<body class="menu">
+<script type="text/javascript">
+$(document).ready( function() {
+	$('#closeMenu').click(function(){
+		$('#menu').animate({
+		  left: "-60px",
+		  opacity: 0
+		}, 400);
+		$('#menu').hide(400);
+	});
+});
+</script>
+<div class="menu">
 	<div class="menu_btns">
-		<button>
+		<button id="closeMenu">
 			<span class="ic_menus"></span>
 			<p class="tit">Menu</p>
 		</button>
@@ -83,6 +86,4 @@
 			<button>Copy</button>
 		</div>
 	</div>
-
-</body>
-</html>
+</div>
