@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 <body class="login">
-
+	<div id="particle-canvas"></div>
 	<div class="logo_login">
 		<img class="img_logo" src="./images/logo_bexfor.png">
 		<p class="txt_logo">MY TRUST</p>
@@ -31,6 +31,17 @@
 		<a class="btn_create" href="">+New member? Create an Account</a>
 	</div>
 	<p class="login txt_copyright">COPYRIGHT Bexfor ALL RIGHTS RESERVED</p>
-
 </body>
+<script type="text/javascript" src="js/particle-network.min.js"></script>
+<script type="text/javascript">
+	var canvasDiv = document.getElementById('particle-canvas');
+	var options = {
+		particleColor: '#999',
+		background: '#000',
+		interactive: true,
+		speed: 'medium',
+		density: 'high'
+	};
+	var particleCanvas = new ParticleNetwork(canvasDiv, options);
+</script>
 </html>
