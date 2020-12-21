@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Bexfor::</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
+	<script src="./js/bexfor.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+$(document).ready( function() {
+	$('#closeMenu').click(function(){
+		$('#menu').animate({
+		  left: "-60px",
+		  opacity: 0
+		}, 400);
+		$('#menu').hide(400);
+	});
+});
+</script>
+<div id="menu">
+<div class="menu">
+	<div class="menu_btns">
+		<button id="closeMenu">
+			<span class="ic_menus"></span>
+			<p class="tit">Menu</p>
+		</button>
+		<button class="menu_uid">
+			<span class="ic_menus"></span>
+			<p class="tit">UID : BEXFOR1004</p>
+		</button>
+		<button onclick="location.href='00_main.html'">
+			<img class="ic_menus logo_bexfor" src="./images/logo_bexfor.png">
+			<p class="tit">HOME</p>
+		</button>
+		<button onclick="location.href='01_notice_notice.html'">
+			<span class="ic_menus ic_notice"></span>
+			<p class="tit">NOTICE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='02_mypage.html'">
+			<span class="ic_menus ic_mypage"></span>
+			<p class="tit">MY PAGE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='03_roi.html'">
+			<span class="ic_menus ic_roi"></span>
+			<p class="tit">ROI</p>
+		</button>
+		<button onclick="location.href='04_mytrust.html'">
+			<span class="ic_menus ic_mytrust"></span>
+			<p class="tit">MY TRUST</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='05_invest_my.html'">
+			<span class="ic_menus ic_investstatus"></span>
+			<p class="tit">INVEST STATUS</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='06_profits.html'">
+			<span class="ic_menus ic_profits"></span>
+			<p class="tit">PROFITS</p>
+		</button>
+		<button onclick="location.href='07_tree.html'">
+			<span class="ic_menus ic_tree"></span>
+			<p class="tit">TREE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='08_wallet.html'">
+			<span class="ic_menus ic_ewallet"></span>
+			<p class="tit">WALLET</p>
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<span class="ic_menus ic_sqbacfor"></span>
+			<p class="tit">BEXFOR COIN</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<img class="ic_menus" src="./images/ic_bexfor.png">
+			<p class="tit">Bexfor | Shortcut to Exchange</p>
+		</button>
+		<button class="menu_lout">
+			<span class="ic_menus"></span>
+			<p class="tit">LOG OUT</p>
+		</button>
+	</div>
+	<div class="wrap_share">
+		<button class="btn_share">
+			<p>
+				<img src="./images/ic_share.png">
+				<span>Share APP</span>
+			</p>
+		</button>
+		<div class="wrap_url">
+			<input type="text" readonly value="http://www.bexfor.net/join.asp">
+			<button>Copy</button>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="header_page">
+		<button id="openMenu" class="btn_menu"><img src="./images/ic_menu.png"></button>
+		<img class="img_logo" src="./images/logo_bexfor.png">
+	</div>
+
+	<div class="title_page bgc_900">
+		<p class="tit">INVEST STATUS</p>
+	</div>
+	<div class="title_page bgc_800">
+		<p>MY INVEST STATUS</p>
+	</div>
+	<div class="title_page bgc_500">
+		<div class="fix_width">
+			<p>Date of Order</p>
+			<div class="wrap_daterange">
+				<div class="f_left">
+					<button class="btn_selrange"><img src="./images/ic_calendar.png"></button>
+					<input class="txt_date" type="text" value="2020" readonly>
+				</div>
+				<span class="tc_white">~</span>
+				<div class="f_right">
+					<input class="txt_date" type="text" value="2020" readonly>
+					<button class="btn_selrange"><img src="./images/ic_calendar.png"></button>
+				</div>
+			</div>
+			<button class="btn_full bgc_100 tc_white">Inquiry</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="wrap_table_function clear">
+			<select class="f_left width_20">
+				<option>10</option>
+				<option>20</option>
+				<option>50</option>
+			</select>
+			<input class="f_right" type="text" placeholder="Search">
+		</div>
+		<div class="scroll_width">
+			<table class="">
+				<thead>
+				  <tr>
+				    <th class="ta_left">No</th>
+				    <th class="ta_left">Date of Order</th>
+				    <th class="ta_left">Product Code</th>
+				    <th class="ta_left">Product Name</th>
+				    <th class="ta_left">Unit Cost</th>
+				    <th class="ta_left">Quantity</th>
+				    <th class="ta_left">Order Amount</th>
+				    <th class="ta_left">Cash</th>
+				    <th class="ta_left">Remittance</th>
+				    <th class="ta_left">Order Classification</th>
+				    <th class="ta_left">Limit</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				  <tr><td>50</td><td>20201017</td><td>N_BEX10010</td><td>BEX(1000)</td><td>1000</td><td>1</td><td>1000</td><td>0</td><td>0</td><td>Re-Trust</td><td>3000</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="wrap_pagination fix_width">
+			<button class="start"><img src="./images/ic_start.png"></button>
+			<button class="prev"><img src="./images/ic_prev.png"></button>
+			<div class="count">
+				<span>1</span>
+				<span>1</span>
+				<span>1</span>
+				<span>1</span>
+				<span>1</span>
+			</div>
+			<button class="next"><img src="./images/ic_next.png"></button>
+			<button class="end"><img src="./images/ic_end.png"></button>
+		</div>
+	</div>
+
+	<p class="txt_copyright">COPYRIGHT Bexfor ALL RIGHTS RESERVED</p>
+
+</body>
+</html>

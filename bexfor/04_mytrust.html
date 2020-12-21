@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Bexfor::</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
+	<script src="./js/bexfor.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+$(document).ready( function() {
+	$('#closeMenu').click(function(){
+		$('#menu').animate({
+		  left: "-60px",
+		  opacity: 0
+		}, 400);
+		$('#menu').hide(400);
+	});
+});
+</script>
+<div id="menu">
+<div class="menu">
+	<div class="menu_btns">
+		<button id="closeMenu">
+			<span class="ic_menus"></span>
+			<p class="tit">Menu</p>
+		</button>
+		<button class="menu_uid">
+			<span class="ic_menus"></span>
+			<p class="tit">UID : BEXFOR1004</p>
+		</button>
+		<button onclick="location.href='00_main.html'">
+			<img class="ic_menus logo_bexfor" src="./images/logo_bexfor.png">
+			<p class="tit">HOME</p>
+		</button>
+		<button onclick="location.href='01_notice_notice.html'">
+			<span class="ic_menus ic_notice"></span>
+			<p class="tit">NOTICE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='02_mypage.html'">
+			<span class="ic_menus ic_mypage"></span>
+			<p class="tit">MY PAGE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='03_roi.html'">
+			<span class="ic_menus ic_roi"></span>
+			<p class="tit">ROI</p>
+		</button>
+		<button onclick="location.href='04_mytrust.html'">
+			<span class="ic_menus ic_mytrust"></span>
+			<p class="tit">MY TRUST</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='05_invest_my.html'">
+			<span class="ic_menus ic_investstatus"></span>
+			<p class="tit">INVEST STATUS</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='06_profits.html'">
+			<span class="ic_menus ic_profits"></span>
+			<p class="tit">PROFITS</p>
+		</button>
+		<button onclick="location.href='07_tree.html'">
+			<span class="ic_menus ic_tree"></span>
+			<p class="tit">TREE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='08_wallet.html'">
+			<span class="ic_menus ic_ewallet"></span>
+			<p class="tit">WALLET</p>
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<span class="ic_menus ic_sqbacfor"></span>
+			<p class="tit">BEXFOR COIN</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<img class="ic_menus" src="./images/ic_bexfor.png">
+			<p class="tit">Bexfor | Shortcut to Exchange</p>
+		</button>
+		<button class="menu_lout">
+			<span class="ic_menus"></span>
+			<p class="tit">LOG OUT</p>
+		</button>
+	</div>
+	<div class="wrap_share">
+		<button class="btn_share">
+			<p>
+				<img src="./images/ic_share.png">
+				<span>Share APP</span>
+			</p>
+		</button>
+		<div class="wrap_url">
+			<input type="text" readonly value="http://www.bexfor.net/join.asp">
+			<button>Copy</button>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="header_page">
+		<button id="openMenu" class="btn_menu"><img src="./images/ic_menu.png"></button>
+		<img class="img_logo" src="./images/logo_bexfor.png">
+	</div>
+
+	<div class="title_page bgc_900 clear">
+		<p class="tit">MY TRUST</p>
+		<div class="wrap_btn_agree">
+			<label class="btn_secret">
+				<input type="checkbox" name="">
+				<span>모두 읽었으며 이에 동의합니다</span>
+				<a class="tc_lblue" href="./04_mytrust(term).html">이용약관</a>
+			</label>
+		</div>
+	</div>
+	<div class="title_page bgc_500 mytrust">
+		<div class="fix_width">
+			<div class="wrap_mt_myw clear">
+				<label class="tit f_left">
+					<input class="f_left" type="radio" name="sel_myw" readonly checked>
+					<span class="f_right">WALLET</span>
+				</label>
+				<input class="desc f_right" type="text" value="40,000 POINT" readonly>
+			</div>
+			<div class="wrap_mt_myw clear">
+				<label class="tit f_left">
+					<input class="f_left" type="radio" name="sel_myw" readonly>
+					<span class="f_right">ETH</span>
+				</label>
+				<input class="desc f_right" type="text" value="Creating a ETH deposit address" readonly>
+			</div>
+			<table class="table_ptype">
+				<body>
+				  <tr>
+				    <td class="tit" rowspan="7">Product<br>Type</td>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(100) $100</p><label></td>
+				  </tr>
+				  <tr>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(500) $500</p><label></td>
+				  </tr>
+				  <tr>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(1,000) $1,000</p><label></td>
+				  </tr>
+				  <tr>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(3,000) $3,000</p><label></td>
+				  </tr>
+				  <tr>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(6,000) $6,000</p><label></td>
+				  </tr>
+				  <tr>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(12,000) $12,000</p><label></td>
+				  </tr>
+				  <tr>
+				    <td class="desc"><label><input type="checkbox"><p>BEX(50,000) $50,000</p><label></td>
+				  </tr>
+				</body>
+			</table>
+			<div class="wrap_mt_order">
+				<input class="tit" type="text" value="Order Classification" readonly>
+				<select class="desc">
+					<option>Re-Trust</option>
+					<option>Re-Trust</option>
+					<option>Re-Trust</option>
+				</select>
+			</div>
+			<div class="wrap_mt_total">
+				<input class="tit" type="text" value="Total Amount" readonly>
+				<input class="desc" type="text" value="50,000 BEX POINT" readonly>
+			</div>
+			<button class="btn_full bgc_blue">CONFIRMED</button>
+			<button class="btn_full bgc_yellow">Cancellation</button>
+		</div>
+	</div>
+<!-- 	<div class="title_page bgc_300">
+		<p>TRUST BANK Wallet</p>
+	</div>
+	<div class="container">
+		<div class="fix_width">
+			<p class="ta_center">Receive coin address</p>
+			<div class="wrap_walletqr">
+				<div class="wrap_txt">
+					<div class="item">
+						<p><span>Bitcoin Wallet</span><button>Copy</button></p>
+						<input type="text" value="1i1o2130r49t8riughjdsml2ueio12e90wjdkjdsfh10120oe" readonly>
+					</div>
+					<div class="item">
+						<p><span class="tc_blue">Payment Amount</span></p>
+						<input type="text" value="BTC : 3.69187330" readonly>
+					</div>
+				</div>
+				<img class="img_qr" src="./images/sample_qr.png">
+			</div>
+			<div class="wrap_walletqr">
+				<div class="wrap_txt">
+					<div class="item">
+						<p><span>Ethereum Wallet</span><button>Copy</button></p>
+						<input type="text" value="sdfk10921391asdmj1i2398378r9yehwf2jdklsad" readonly>
+					</div>
+					<div class="item">
+						<p><span class="tc_blue">Payment Amount</span></p>
+						<input type="text" value="ETH : 130.29315961" readonly>
+					</div>
+				</div>
+				<img class="img_qr" src="./images/sample_qr.png">
+			</div>
+			<div class="wrap_walletqr">
+				<div class="wrap_txt">
+					<div class="item">
+						<p><span>Ripplecoin Wallet</span><button>Copy</button></p>
+						<input type="text" value="kdsjlk1wru90rue2nfwiqp12kdasido12esqw09" readonly>
+					</div>
+					<div class="item">
+						<p><span>XRP Tag</span><button>Copy</button></p>
+						<input type="text" value="43650482" readonly>
+					</div>
+					<div class="item">
+						<p><span class="tc_blue">Payment Amount</span></p>
+						<input type="text" value="XRP : 212026.12161818" readonly>
+					</div>
+				</div>
+				<img class="img_qr" src="./images/sample_qr.png">
+			</div>
+		</div>
+	</div> -->
+
+	<p class="txt_copyright tc_white">COPYRIGHT Bexfor ALL RIGHTS RESERVED</p>
+
+</body>
+</html>

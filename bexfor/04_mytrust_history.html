@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Bexfor::</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
+	<script src="./js/bexfor.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+$(document).ready( function() {
+	$('#closeMenu').click(function(){
+		$('#menu').animate({
+		  left: "-60px",
+		  opacity: 0
+		}, 400);
+		$('#menu').hide(400);
+	});
+});
+</script>
+<div id="menu">
+<div class="menu">
+	<div class="menu_btns">
+		<button id="closeMenu">
+			<span class="ic_menus"></span>
+			<p class="tit">Menu</p>
+		</button>
+		<button class="menu_uid">
+			<span class="ic_menus"></span>
+			<p class="tit">UID : BEXFOR1004</p>
+		</button>
+		<button onclick="location.href='00_main.html'">
+			<img class="ic_menus logo_bexfor" src="./images/logo_bexfor.png">
+			<p class="tit">HOME</p>
+		</button>
+		<button onclick="location.href='01_notice_notice.html'">
+			<span class="ic_menus ic_notice"></span>
+			<p class="tit">NOTICE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='02_mypage.html'">
+			<span class="ic_menus ic_mypage"></span>
+			<p class="tit">MY PAGE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='03_roi.html'">
+			<span class="ic_menus ic_roi"></span>
+			<p class="tit">ROI</p>
+		</button>
+		<button onclick="location.href='04_mytrust.html'">
+			<span class="ic_menus ic_mytrust"></span>
+			<p class="tit">MY TRUST</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='05_invest_my.html'">
+			<span class="ic_menus ic_investstatus"></span>
+			<p class="tit">INVEST STATUS</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='06_profits.html'">
+			<span class="ic_menus ic_profits"></span>
+			<p class="tit">PROFITS</p>
+		</button>
+		<button onclick="location.href='07_tree.html'">
+			<span class="ic_menus ic_tree"></span>
+			<p class="tit">TREE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='08_wallet.html'">
+			<span class="ic_menus ic_ewallet"></span>
+			<p class="tit">WALLET</p>
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<span class="ic_menus ic_sqbacfor"></span>
+			<p class="tit">BEXFOR COIN</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<img class="ic_menus" src="./images/ic_bexfor.png">
+			<p class="tit">Bexfor | Shortcut to Exchange</p>
+		</button>
+		<button class="menu_lout">
+			<span class="ic_menus"></span>
+			<p class="tit">LOG OUT</p>
+		</button>
+	</div>
+	<div class="wrap_share">
+		<button class="btn_share">
+			<p>
+				<img src="./images/ic_share.png">
+				<span>Share APP</span>
+			</p>
+		</button>
+		<div class="wrap_url">
+			<input type="text" readonly value="http://www.bexfor.net/join.asp">
+			<button>Copy</button>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="header_page">
+		<button id="openMenu" class="btn_menu"><img src="./images/ic_menu.png"></button>
+		<img class="img_logo" src="./images/logo_bexfor.png">
+	</div>
+
+	<div class="title_page bgc_900">
+		<p class="tit">MY TRUST</p>
+	</div>
+	<div class="title_page bgc_800">
+		<p>ETH DEPOSIT HISTORY</p>
+	</div>
+	<div class="container">
+		<div class="scroll_width">
+			<table class="">
+				<thead>
+				  <tr>
+				    <th class="ta_left">No</th>
+				    <th class="ta_left">Coin</th>
+				    <th class="ta_left">Time</th>
+				    <th class="ta_left">Amount</th>
+				    <th class="ta_left">Address</th>
+				    <th class="ta_left">Status</th>
+				    <th class="ta_left">Action</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr><td class="no_bor_bott">00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+0.00123458</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td class="no_bor_bott bgc_lblue">Detail&#9651;</td></tr>
+				  <tr><td></td><td class="bgc_lblue" colspan="5">Txid : 489202023kdnvd9d91n1c1vba91jh31h31bdbdi191j12nwj123</td><td class="bgc_lblue"></td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				  <tr><td>00</td><td>ETH</td><td class="ws_nw">2020-11-03 10:29:49</td><td>+100.52448293</td><td>0xD9a1Cac14F9fD8ba8613bFBe4b02cd726e15fA15</td><td>Successful</td><td>Detail&#9661;</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="wrap_pagination fix_width">
+			<button class="start"><img src="./images/ic_start.png"></button>
+			<button class="prev"><img src="./images/ic_prev.png"></button>
+			<div class="count">
+				<span>1</span>
+				<span>1</span>
+				<span>1</span>
+				<span>1</span>
+				<span>1</span>
+			</div>
+			<button class="next"><img src="./images/ic_next.png"></button>
+			<button class="end"><img src="./images/ic_end.png"></button>
+		</div>
+	</div>
+	<p class="txt_copyright">COPYRIGHT Bexfor ALL RIGHTS RESERVED</p>
+
+</body>
+</html>

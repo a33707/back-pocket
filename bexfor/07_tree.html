@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Bexfor::</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
+	<script src="./js/bexfor.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+$(document).ready( function() {
+	$('#closeMenu').click(function(){
+		$('#menu').animate({
+		  left: "-60px",
+		  opacity: 0
+		}, 400);
+		$('#menu').hide(400);
+	});
+});
+</script>
+<div id="menu">
+<div class="menu">
+	<div class="menu_btns">
+		<button id="closeMenu">
+			<span class="ic_menus"></span>
+			<p class="tit">Menu</p>
+		</button>
+		<button class="menu_uid">
+			<span class="ic_menus"></span>
+			<p class="tit">UID : BEXFOR1004</p>
+		</button>
+		<button onclick="location.href='00_main.html'">
+			<img class="ic_menus logo_bexfor" src="./images/logo_bexfor.png">
+			<p class="tit">HOME</p>
+		</button>
+		<button onclick="location.href='01_notice_notice.html'">
+			<span class="ic_menus ic_notice"></span>
+			<p class="tit">NOTICE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='02_mypage.html'">
+			<span class="ic_menus ic_mypage"></span>
+			<p class="tit">MY PAGE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='03_roi.html'">
+			<span class="ic_menus ic_roi"></span>
+			<p class="tit">ROI</p>
+		</button>
+		<button onclick="location.href='04_mytrust.html'">
+			<span class="ic_menus ic_mytrust"></span>
+			<p class="tit">MY TRUST</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='05_invest_my.html'">
+			<span class="ic_menus ic_investstatus"></span>
+			<p class="tit">INVEST STATUS</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='06_profits.html'">
+			<span class="ic_menus ic_profits"></span>
+			<p class="tit">PROFITS</p>
+		</button>
+		<button onclick="location.href='07_tree.html'">
+			<span class="ic_menus ic_tree"></span>
+			<p class="tit">TREE</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='08_wallet.html'">
+			<span class="ic_menus ic_ewallet"></span>
+			<p class="tit">WALLET</p>
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<span class="ic_menus ic_sqbacfor"></span>
+			<p class="tit">BEXFOR COIN</p>
+			<img class="ic_right" src="./images/ic_right.png">
+		</button>
+		<button onclick="location.href='09_bexforcoin.html'">
+			<img class="ic_menus" src="./images/ic_bexfor.png">
+			<p class="tit">Bexfor | Shortcut to Exchange</p>
+		</button>
+		<button class="menu_lout">
+			<span class="ic_menus"></span>
+			<p class="tit">LOG OUT</p>
+		</button>
+	</div>
+	<div class="wrap_share">
+		<button class="btn_share">
+			<p>
+				<img src="./images/ic_share.png">
+				<span>Share APP</span>
+			</p>
+		</button>
+		<div class="wrap_url">
+			<input type="text" readonly value="http://www.bexfor.net/join.asp">
+			<button>Copy</button>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="header_page">
+		<button id="openMenu" class="btn_menu"><img src="./images/ic_menu.png"></button>
+		<img class="img_logo" src="./images/logo_bexfor.png">
+	</div>
+
+	<div class="title_page bgc_900">
+		<p class="tit">TREE</p>
+	</div>
+	<div class="title_page bgc_800">
+		<p>REFERRAL ORGANIZATION CHART</p>
+	</div>
+	<div class="title_page bgc_500">
+		<div class="fix_width wrap_chart_function">
+			<div class="item">
+				<p class="ta_left tit"><button><img src="./images/ic_plus.png"></button><button><img src="./images/ic_minus.png"></button>Member's</p>
+				<div class="desc"><input class="" type="text"><button class="bgc_100 tc_white ">Search</button></div>
+			</div>
+			<div class="item">
+				<p class="ta_left tit">Phase Adjustment</p>
+				<div class="desc"><select class=""><option>test</option><option>test</option><option>test</option></select><button class="bgc_100 tc_white ">Inquiry</button></div>
+			</div>
+			<div class="box_txt item">
+				<span class="tc_red">100,000&#9650;</span><span> | </span>
+				<span class="tc_green">50,000&#9650;</span><span> | </span>
+				<span class="tc_blue">10,000&#9650;</span><span> | </span>
+				<span class="tc_navy">5,000&#9650;</span><span> | </span>
+				<span class="tc_purple">1,000&#9650;</span>
+			</div>
+		</div>
+	</div>
+	<div class="container"></div>
+
+	<p class="txt_copyright">COPYRIGHT Bexfor ALL RIGHTS RESERVED</p>
+
+</body>
+</html>
