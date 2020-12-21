@@ -95,6 +95,7 @@ table tr td {border-left: 1px solid #eee; border-bottom: 1px solid #999; vertica
 .gnb .menus .item.on {background-color: #50546E; border-left: 4px solid #F09836;}
 .gnb .menus .item.on .txt {color: #F09836;}
 .gnb .menus .item:after {clear: both; display: block; content: "";}
+.gnb .menus .item:hover .txt {font-weight: 700;}
 .gnb .menus .item .txt {line-height: 56px; float: left; color: #ddd; font-size: 16px;}
 .gnb .menus .item .ic_menu_item {float: left; width: 24px; height: 24px; margin: 16px 16px 16px 0;}
 .gnb .menus .item .ic_fold {float: right; width: 24px; height: 24px; margin: 16px 0;}
@@ -121,7 +122,7 @@ table tr td {border-left: 1px solid #eee; border-bottom: 1px solid #999; vertica
 .gnb .foot .btns_contact .btn_consult p,
 .gnb .foot .btns_contact .btn_commu p {float: left; font-size: 12px; font-weight: 700; color: #fff;}
 
-.container {width: calc(100% - 300px); padding: 0 32px; position: absolute; left: 300px;}
+.container {min-width: 1280px; width: calc(100% - 300px); padding: 0 32px; position: absolute; left: 300px;}
 .header {width: 100%; padding: 20px 0; border-bottom: 1px solid #3C3E50;}
 .header:after {clear: both; content: ""; display: block;}
 .head_wrap {float: right;}
@@ -139,12 +140,55 @@ table tr td {border-left: 1px solid #eee; border-bottom: 1px solid #999; vertica
 .header .head_fn_btns .btn_setting {}
 .header .head_fn_btns .btn_logout {}
 
+.title_txt_page {margin: 32px 0;}
+.title_txt_page .txt {font-size: 32px; color: #fff; font-weight: 900;}
+
+.box_container {}
+.box_container .wrap_boxes {margin-top: 32px;}
+.box_container .wrap_boxes:after {clear: both; content: ""; display: block;}
+.box_container .wrap_boxes .box_item {padding: 24px 28px; margin-left: 16px; background-color: #3D415E; float: left; border-radius: 8px; color: #fff;}
+.box_container .wrap_boxes .box_item:first-child {margin-left: 0;}
+.box_container .wrap_boxes .box_item .title_wrap {}
+.box_container .wrap_boxes .box_item .title_wrap:after {clear: both; content: ""; display: block;}
+.box_container .wrap_boxes .box_item .title_wrap .txt {font-size: 20px; font-weight: 700; margin-bottom: 24px;}
+.box_container .wrap_boxes .box_item .title_wrap .ic {width: 24px; height: 24px; float: left; margin-right: 4px; display: block;}
+.box_container .wrap_boxes.b1 {}
+.box_container .wrap_boxes.b1 .box_item {width: 100%;}
+.box_container .wrap_boxes.b2 {}
+.box_container .wrap_boxes.b2 .box_item {width: calc(50% - 8px);}
+.box_container .wrap_boxes.b3 {}
+.box_container .wrap_boxes.b3 .box_item {width: calc(33.333% - 10.7px)}
+.box_container .wrap_boxes.b4 {}
+.box_container .wrap_boxes.b4 .box_item {width: calc(25% - 12px);}
+.box_container .wrap_boxes.b5 {}
+.box_container .wrap_boxes.b5 .box_item {width: calc(20% - 12.8px);}
+
+.box_container .wrap_boxes.dashes .box_item  {cursor: pointer; text-align: center;}
+.box_container .wrap_boxes.dashes .box_item:hover {outline: 1px solid #2F58C4;}
+.box_container .wrap_boxes.dashes .box_item .ic {width: 48px; height: 48px; display: block; margin: 0 auto  24px;}
+.box_container .wrap_boxes.dashes .box_item .count {font-size: 48px; font-weight: 900;}
+.box_container .wrap_boxes.dashes .box_item .tit {font-size: 16px; line-height: 24px; color: #ddd;}
+
+.box_container .wrap_boxes.notice_dash .box_item {}
+.box_container .wrap_boxes.notice_dash .box_item .btn_more_notice {float: right; color: #F09836; font-weight: 700;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice {}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li.new .tit:before {content: "NEW"; display: block; float: left; background-color: #F35231; line-height: 18px; font-size: 12px; padding: 0 4px; border-radius: 4px; margin: 19px 4px 19px 0;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li {border-top: 1px solid #50546E; padding: 0 12px;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li:hover {outline: 1px solid #2F58C4;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li > a:after {clear: both; content: ""; display: block;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li .tit {font-size: 16px; line-height: 56px; float: left;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li .date {font-size: 14px; line-height: 56px; float: right;}
+
+.box_container .wrap_boxes.graduated .box_item {}
+.box_container .wrap_boxes.graduated .box_item ul {height: 264px; overflow-y: scroll;}
+.box_container .wrap_boxes.graduated .box_item ul > li {border-top: 1px solid #50546E; padding: 0 12px;}
+.box_container .wrap_boxes.graduated .box_item ul > li > p {font-size: 14px; line-height: 48px;}
 
 @media (max-width:640px) {
 .wrap_account {width: 312px;}
 .wrap_account .wrap_login .noti_psw {font-size: 11px;}
 
-.container {width: 100%; left: 0; padding: 0 16px;}
+.container {min-width: auto; width: 100%; left: 0; padding: 0 16px;}
 .common .overlay {display: none; width: 112px; height: 100vh; content: ""; background-color: rgba(0,0,0,0.5); z-index: 1; position: absolute; right: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px;}
 .gnb_wrap {display: none; width: calc(100% - 100px);}
 .gnb .wrap_logo {margin: 16px 0 16px 16px; width: 160px; height: 37px;}
@@ -162,4 +206,31 @@ table tr td {border-left: 1px solid #eee; border-bottom: 1px solid #999; vertica
 .header .btn_drawer {display: block;}
 .header .head_fn_btns {float: right;}
 .header .profile {display: none;}
+
+.title_txt_page .txt {font-size: 24px;}
+.title_txt_page {margin: 24px 0;}
+
+
+.box_container .wrap_boxes .box_item {padding: 16px 24px;}
+.box_container .wrap_boxes .box_item .title_wrap .ic {width: 20px; height: 20px;}
+.box_container .wrap_boxes .box_item .title_wrap .txt {font-size: 16px; margin-bottom: 16px; line-height: 20px;}
+
+.box_container .wrap_boxes.dashes {margin: -8px;}
+.box_container .wrap_boxes.dashes .box_item {margin: 8px; width: calc(50% - 16px); padding: 16px 4px;}
+.box_container .wrap_boxes.dashes .box_item .count {font-size: 32px;}
+.box_container .wrap_boxes.dashes .box_item .tit {font-size: 14px; line-height: 20px;}
+.box_container .wrap_boxes.dashes .box_item .ic {margin-bottom: 12px;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li {padding: 14px 8px;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li.new .tit:before {margin: 0 4px 0 0;}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li .tit {font-size: 14px; line-height: 20px;
+text-overflow:ellipsis;
+white-space:nowrap;
+word-wrap:normal;
+overflow:hidden;
+}
+.box_container .wrap_boxes.notice_dash .box_item .list_notice li .date {font-size: 12px; line-height: 18px; margin-top: 4px; float: left;}
+
+.box_container .wrap_boxes.graduated .box_item {width: 100%; margin: 16px 0 0 0;}
+.box_container .wrap_boxes.graduated .box_item:first-child {margin-top: 0;}
+
 }
