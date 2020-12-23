@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>BOUTIQUE-S</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/boutiques.js"></script>
+</head>
+<body class="common">
+	<div class="gnb_wrap">
+		<div class="gnb">
+			<div class="wrap_logo"><a href="./02_dashboard.html"><img src="./images/img_logo_hori.png"></a></div>
+			<ul class="menus">
+				<li class="item"><button onclick="location.href='./02_dashboard.html'"><img class="ic_menu_item" src="./images/ic_dash_off.png"><p class="txt">대쉬보드</p></button></li>
+				<li class="item"><button onclick="location.href='./03_subscription.html'"><img class="ic_menu_item" src="./images/ic_docu_off.png"><p class="txt">상품가입</p></button></li>
+				<li class="item"><button onclick="location.href='./04_withdraw.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">수당출금</p></button></li>
+				<li class="item"><button onclick="location.href='./05_staking.html'"><img class="ic_menu_item" src="./images/ic_wallet_off.png"><p class="txt">스테이킹</p></button></li>
+				<li class="item"><button onclick="location.href='./06_incentive.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">인센티브 출금</p></button></li>
+				<li class="item"><button onclick="location.href='./07_investinfo_list.html'"><img class="ic_menu_item" src="./images/ic_info_off.png"><p class="txt">투자전략</p></button></li>
+				<li class="item"><button onclick="location.href='./08_history.html'"><img class="ic_menu_item" src="./images/ic_receipt_off.png"><p class="txt">수당내역</p></button></li>
+				<li class="item"><button onclick="location.href='./09_member_list.html'"><img class="ic_menu_item" src="./images/ic_member_off.png"><p class="txt">하부 리스트</p></button></li>
+				<li class="item on"><button onclick="location.href='./10_introduce.html'"><img class="ic_menu_item" src="./images/ic_logo_on.png"><p class="txt">소개</p></button></li>
+				<li class="item pare"><button><img class="ic_menu_item" src="./images/ic_notice_off.png"><p class="txt">고객센터</p><img class="ic_fold" src="./images/ic_fold_closed.png"></button></li>
+				<li class="item chil"><button onclick="location.href='./12_notice_list.html'"><p class="txt">공지사항</p></button></li>
+				<li class="item chil"><button onclick="location.href='./13_faq.html'"><p class="txt">FAQ</p></button></li>
+				<li class="item chil"><button onclick="location.href='./14_video_list.html'"><p class="txt">동영상</p></button></li>
+			</ul>
+			<div class="foot">
+				<div class="btns_lang">
+					<button class="sel_lang on" id="langKOR">KOR</button>
+					<button class="sel_lang" id="langENG">ENG</button>
+					<button class="sel_lang" id="langCHN">CHN</button>
+					<button class="sel_lang" id="langJPN">JPN</button>
+				</div>
+				<div class="cprignt">
+					<p class="txt">2020 © Boutique-S All Right Reserved.</p>
+					<div class="wrap"><a class="btn_terms" href="">이용약관&nbsp</a><p class="txt">|&nbsp영업시간: 오전 11시 ~ 오후 6시</p></div>
+				</div>
+				<div class="btns_contact">
+					<button class="btn_consult"><img src="./images/ic_kakaot.png"><p>1:1고객상담</p></button>
+					<button class="btn_commu"><img src="./images/ic_kakaot.png"><p>커뮤니티</p></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="head_wrap">
+				<button class="btn_drawer"><img src="./images/ic_drawer.png"></button>
+				<div class="profile">
+					<p class="name">센터장 오영훈</p>
+					<p class="email">steveoh0925@gmail.com</p>
+				</div>
+				<div class="head_fn_btns">
+					<button class="btn_alert new" onclick="location.href='./12_notice_list.html'"><img src="./images/ic_alert.png"><p class="ttip">공지사항</p></button>
+					<button class="btn_setting" onclick="location.href='./11_myprofile.html'"><img src="./images/ic_setting.png"><p class="ttip">프로필</p></button>
+					<button class="btn_logout btn_popup_open"><img src="./images/ic_power.png"><p class="ttip">로그아웃</p></button>
+					<div id="layerPopup" class="pop_logout">
+						<div class="content">
+							<p class="tit">로그아웃 하시겠습니까?</p>
+							<div class="wrap_btns">
+								<button class="btn_cancel" type="button">아니요</button>
+								<button class="btn_confirm" type="button" onclick="location.href='./01_login.html'">네</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_wrap">
+			<div class="title_txt_page">
+				<p class="txt">소개</p>
+			</div>
+			<div class="box_container">
+				<div class="wrap_boxes b2">
+					<div class="box_item">
+						<div class="title_wrap">
+							<p class="txt">부티크-S</p>
+						</div>
+						<pre>
+저는 Boutique-S를 창립하기 전에 영국 은행권 에서 10 년 이상 일했습니다.
+Visa Inc.에서 저의 주 업무는 사기 방지 시스템 개발로서 영국 은행들이 수백만 달러의 사기 손실을 방지하는 데 도움이 되는 전략을 만들었습니다.
+
+그런데, 은행권에서 일을 하면 할수록 현재의 금융시스템에 의문과 불합리함을 느꼈습니다. 
+수많은 메이저 은행들은 신용을 담보로 장기간 적금을 유도하지만 연이율은 1~2% 밖에 되지 않습니다.
+또한, 제1금융이라는 간판을 내세워 권유하는 투자가 오히려 손실로 돌아오게 하는 경우도 적지 않습니다.
+그럼에도 불구하고 국민들은 그들의 간판을 보고 안심감을 느끼고 다시 자신의 자산 관리를 맡깁니다. 과연 메이저 은행들은 국민들이 풍요로워 지길 원하는 걸까요? 
+
+정답은 아닙니다. 
+
+은행은 사람들이 더욱 큰 예치금을 자신들의 은행에 맡기고 수익은 최대한 적게 내주는 것을 원합니다. 
+
+정부는 다수가 큰 수익을 내는 금융시스템을 반기지 않습니다. 
+
+"마켓의 원리상 다수가 돈을 잃어야 소수가 수익을 더 크게 내기 때문입니다."
+ 
+그 현실에 괴리감을 느낀 저는 큰 수익을 더욱 쉽고 빠르게 배분할 수 있는 시스템을 고안 하였습니다. 제가 고안한 로직 상에선 서로가 서로를 돕는다면 모두가 풍요로워 질수 있는 투자 전략들이 몇 가지 만들어 집니다. 
+
+예를 들어, 일반형과 고급형의 대기 열이 길어지면 VIP 상품으로 빠르게 원금+수익을 받을 수 있습니다. 또한 여러분들이 일부 스테이킹 하고 있는 부티크S의 화폐 시온코인은 2021년 대형거래소에 상장 계획이 있으며 이를 통해 수익을 드릴 수 있습니다.
+
+저는 감히 이 시스템이 세상의 모든 사람들을 부자로 만들 시스템이라 말하지 않습니다. 
+다만, 저는 금융권에서 쌓은 노하우로 부티크S에 들어오는 회원들에 한하여 더욱 더 풍요로워질 수 있도록 노력하겠습니다. 
+
+감사합니다. 
+
+CEO Simon Osborne</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+</body>
+</html>

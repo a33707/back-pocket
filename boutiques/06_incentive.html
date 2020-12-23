@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>BOUTIQUE-S</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/boutiques.js"></script>
+</head>
+<body class="common">
+	<div class="gnb_wrap">
+		<div class="gnb">
+			<div class="wrap_logo"><a href="./02_dashboard.html"><img src="./images/img_logo_hori.png"></a></div>
+			<ul class="menus">
+				<li class="item"><button onclick="location.href='./02_dashboard.html'"><img class="ic_menu_item" src="./images/ic_dash_off.png"><p class="txt">대쉬보드</p></button></li>
+				<li class="item"><button onclick="location.href='./03_subscription.html'"><img class="ic_menu_item" src="./images/ic_docu_off.png"><p class="txt">상품가입</p></button></li>
+				<li class="item"><button onclick="location.href='./04_withdraw.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">수당출금</p></button></li>
+				<li class="item"><button onclick="location.href='./05_staking.html'"><img class="ic_menu_item" src="./images/ic_wallet_off.png"><p class="txt">스테이킹</p></button></li>
+				<li class="item on"><button onclick="location.href='./06_incentive.html'"><img class="ic_menu_item" src="./images/ic_save_on.png"><p class="txt">인센티브 출금</p></button></li>
+				<li class="item"><button onclick="location.href='./07_investinfo_list.html'"><img class="ic_menu_item" src="./images/ic_info_off.png"><p class="txt">투자전략</p></button></li>
+				<li class="item"><button onclick="location.href='./08_history.html'"><img class="ic_menu_item" src="./images/ic_receipt_off.png"><p class="txt">수당내역</p></button></li>
+				<li class="item"><button onclick="location.href='./09_member_list.html'"><img class="ic_menu_item" src="./images/ic_member_off.png"><p class="txt">하부 리스트</p></button></li>
+				<li class="item"><button onclick="location.href='./10_introduce.html'"><img class="ic_menu_item" src="./images/ic_logo_off.png"><p class="txt">소개</p></button></li>
+				<li class="item pare"><button><img class="ic_menu_item" src="./images/ic_notice_off.png"><p class="txt">고객센터</p><img class="ic_fold" src="./images/ic_fold_closed.png"></button></li>
+				<li class="item chil"><button onclick="location.href='./12_notice_list.html'"><p class="txt">공지사항</p></button></li>
+				<li class="item chil"><button onclick="location.href='./13_faq.html'"><p class="txt">FAQ</p></button></li>
+				<li class="item chil"><button onclick="location.href='./14_video_list.html'"><p class="txt">동영상</p></button></li>
+			</ul>
+			<div class="foot">
+				<div class="btns_lang">
+					<button class="sel_lang on" id="langKOR">KOR</button>
+					<button class="sel_lang" id="langENG">ENG</button>
+					<button class="sel_lang" id="langCHN">CHN</button>
+					<button class="sel_lang" id="langJPN">JPN</button>
+				</div>
+				<div class="cprignt">
+					<p class="txt">2020 © Boutique-S All Right Reserved.</p>
+					<div class="wrap"><a class="btn_terms" href="">이용약관&nbsp</a><p class="txt">|&nbsp영업시간: 오전 11시 ~ 오후 6시</p></div>
+				</div>
+				<div class="btns_contact">
+					<button class="btn_consult"><img src="./images/ic_kakaot.png"><p>1:1고객상담</p></button>
+					<button class="btn_commu"><img src="./images/ic_kakaot.png"><p>커뮤니티</p></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="head_wrap">
+				<button class="btn_drawer"><img src="./images/ic_drawer.png"></button>
+				<div class="profile">
+					<p class="name">센터장 오영훈</p>
+					<p class="email">steveoh0925@gmail.com</p>
+				</div>
+				<div class="head_fn_btns">
+					<button class="btn_alert new" onclick="location.href='./12_notice_list.html'"><img src="./images/ic_alert.png"><p class="ttip">공지사항</p></button>
+					<button class="btn_setting" onclick="location.href='./11_myprofile.html'"><img src="./images/ic_setting.png"><p class="ttip">프로필</p></button>
+					<button class="btn_logout btn_popup_open"><img src="./images/ic_power.png"><p class="ttip">로그아웃</p></button>
+					<div id="layerPopup" class="pop_logout">
+						<div class="content">
+							<p class="tit">로그아웃 하시겠습니까?</p>
+							<div class="wrap_btns">
+								<button class="btn_cancel" type="button">아니요</button>
+								<button class="btn_confirm" type="button" onclick="location.href='./01_login.html'">네</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_wrap">
+			<div class="title_txt_page">
+				<p class="txt">인센티브 출금</p>
+			</div>
+			<div class="box_container">
+				<div class="wrap_boxes b2">
+					<div class="box_item">
+						<div class="wrap_inputs">
+							<div class="item">
+								<p class="tit">보유 적립 인센티브</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="1,000 P" readonly>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">현재 이더리움 시세</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="1 ETH = 658,000 KRW" readonly>
+								</div>
+							</div>
+							<hr>
+							<div class="item">
+								<p class="tit">출금신청금액</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="950 P" readonly>
+									<p class="noti">출금수수료 5%가 공제됩니다. (-50 P)</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">출금 이더리움</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="1.4 ETH" readonly>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">이더리움주소</p>
+								<div class="input_wrap">
+									<input type="text" name="" placeholder="개인 이더리움 지갑 주소를 입력하세요.">
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">출금 비밀번호</p>
+								<div class="input_wrap">
+									<input type="text" name="" placeholder="출금 비밀번호를 입력하세요.">
+								</div>
+							</div>
+							<button class="btn_confirm">신청하기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+</body>
+</html>

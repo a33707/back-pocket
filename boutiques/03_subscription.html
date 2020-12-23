@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>BOUTIQUE-S</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="./style/reset.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/boutiques.js"></script>
+</head>
+<body class="common">
+	<div class="gnb_wrap">
+		<div class="gnb">
+			<div class="wrap_logo"><a href="./02_dashboard.html"><img src="./images/img_logo_hori.png"></a></div>
+			<ul class="menus">
+				<li class="item"><button onclick="location.href='./02_dashboard.html'"><img class="ic_menu_item" src="./images/ic_dash_off.png"><p class="txt">대쉬보드</p></button></li>
+				<li class="item on"><button onclick="location.href='./03_subscription.html'"><img class="ic_menu_item" src="./images/ic_docu_on.png"><p class="txt">상품가입</p></button></li>
+				<li class="item"><button onclick="location.href='./04_withdraw.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">수당출금</p></button></li>
+				<li class="item"><button onclick="location.href='./05_staking.html'"><img class="ic_menu_item" src="./images/ic_wallet_off.png"><p class="txt">스테이킹</p></button></li>
+				<li class="item"><button onclick="location.href='./06_incentive.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">인센티브 출금</p></button></li>
+				<li class="item"><button onclick="location.href='./07_investinfo_list.html'"><img class="ic_menu_item" src="./images/ic_info_off.png"><p class="txt">투자전략</p></button></li>
+				<li class="item"><button onclick="location.href='./08_history.html'"><img class="ic_menu_item" src="./images/ic_receipt_off.png"><p class="txt">수당내역</p></button></li>
+				<li class="item"><button onclick="location.href='./09_member_list.html'"><img class="ic_menu_item" src="./images/ic_member_off.png"><p class="txt">하부 리스트</p></button></li>
+				<li class="item"><button onclick="location.href='./10_introduce.html'"><img class="ic_menu_item" src="./images/ic_logo_off.png"><p class="txt">소개</p></button></li>
+				<li class="item pare"><button><img class="ic_menu_item" src="./images/ic_notice_off.png"><p class="txt">고객센터</p><img class="ic_fold" src="./images/ic_fold_closed.png"></button></li>
+				<li class="item chil"><button onclick="location.href='./12_notice_list.html'"><p class="txt">공지사항</p></button></li>
+				<li class="item chil"><button onclick="location.href='./13_faq.html'"><p class="txt">FAQ</p></button></li>
+				<li class="item chil"><button onclick="location.href='./14_video_list.html'"><p class="txt">동영상</p></button></li>
+			</ul>
+			<div class="foot">
+				<div class="btns_lang">
+					<button class="sel_lang on" id="langKOR">KOR</button>
+					<button class="sel_lang" id="langENG">ENG</button>
+					<button class="sel_lang" id="langCHN">CHN</button>
+					<button class="sel_lang" id="langJPN">JPN</button>
+				</div>
+				<div class="cprignt">
+					<p class="txt">2020 © Boutique-S All Right Reserved.</p>
+					<div class="wrap"><a class="btn_terms" href="">이용약관&nbsp</a><p class="txt">|&nbsp영업시간: 오전 11시 ~ 오후 6시</p></div>
+				</div>
+				<div class="btns_contact">
+					<button class="btn_consult"><img src="./images/ic_kakaot.png"><p>1:1고객상담</p></button>
+					<button class="btn_commu"><img src="./images/ic_kakaot.png"><p>커뮤니티</p></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="head_wrap">
+				<button class="btn_drawer"><img src="./images/ic_drawer.png"></button>
+				<div class="profile">
+					<p class="name">센터장 오영훈</p>
+					<p class="email">steveoh0925@gmail.com</p>
+				</div>
+				<div class="head_fn_btns">
+					<button class="btn_alert new" onclick="location.href='./12_notice_list.html'"><img src="./images/ic_alert.png"><p class="ttip">공지사항</p></button>
+					<button class="btn_setting" onclick="location.href='./11_myprofile.html'"><img src="./images/ic_setting.png"><p class="ttip">프로필</p></button>
+					<button class="btn_logout btn_popup_open"><img src="./images/ic_power.png"><p class="ttip">로그아웃</p></button>
+					<div id="layerPopup" class="pop_logout">
+						<div class="content">
+							<p class="tit">로그아웃 하시겠습니까?</p>
+							<div class="wrap_btns">
+								<button class="btn_cancel" type="button">아니요</button>
+								<button class="btn_confirm" type="button" onclick="location.href='./01_login.html'">네</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_wrap">
+			<div class="title_txt_page">
+				<p class="txt">상품가입</p>
+				<button class="btn_goto_subs"><img src="./images/ic_docu_white.png"><span>가입신청</span></button>
+			</div>
+			<div class="box_container">
+				<div class="wrap_boxes b2 subscription">
+					<div class="wrap_subs">
+						<div class="box_item prod_normal">
+							<div class="title_wrap">
+								<img class="ic" src="./images/ic_normal.png">
+								<p class="txt">일반형</p>
+							</div>
+							<div class="desc_wrap">
+								<p class="txt">부티크 S의 더 클래스 일반형 프로그램은 <span>가입한 원금의 4배</span>에 달하는 축하 수령금을 지급 해드립니다.<br><span>5명의 회원이 모이면 선순번 1명의 축하금 수령자가 발생</span>하는 초고속 기부사이클을 경험해보세요.<br>졸업 후에는 60일간 시온 코인 스테이킹을 통하여 추가적인 수익을 기대할 수 있습니다.</p>
+								<div class="item">
+									<p class="tit">가입안내</p>
+									<div class="desc">
+										<p class="txt">가입비: 297P + 상품가격: 803P = <br class="for_mob">합계: <span class="fw_800">1,100P</span></p>
+										<div class="wrap_cost">
+											<div class="item">
+												<p class="tit">이더리움</p>
+												<p class="price">1.7 ETH</p>
+											</div>
+											<div class="item">
+												<p class="tit">테더</p>
+												<p class="price">1011 USDT</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<p class="tit">축하금 수령 예시</p>
+									<div class="desc">
+										<div class="wrap_txt tit"><p class="fs_16 fw_700 f_left">고객 수령금액:</p><p class="fs_16 fw_700 f_right">4,015P</p></div>
+										<div class="wrap_txt"><p class="fs_14 f_left"><span class="line"></span>즉시 출금 가능금액:</p><p class="fs_14 f_right">3,212P</p></div>
+										<div class="wrap_txt"><p class="fs_14 f_left"><span class="line"></span>스테이킹 금액:</p><p class="fs_14 f_right">803P</p></div>
+										<p class="noti fs_12">*60일 간 스테이킹 진행 후 이자 0.7% 합산하여 지급</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box_item prod_advanced">
+							<div class="title_wrap">
+								<img class="ic" src="./images/ic_advanced.png">
+								<p class="txt">고급형</p>
+							</div>
+							<div class="desc_wrap">
+								<p class="txt">부티크 S의 더 클래스 일반형 프로그램은 <span>가입한 원금의 3배</span>에 달하는 축하 수령금을 지급 해드립니다.<br><span>3명의 회원이 모이면 선순번 1명의 축하금 수령자가 발생</span>하는 초고속 기부사이클을 경험해보세요.<br>졸업 후에는 60일간 시온 코인 스테이킹을 통하여 추가적인 수익을 기대할 수 있습니다.</p>
+								<div class="item">
+									<p class="tit">가입안내</p>
+									<div class="desc">
+										<p class="txt">가입비: 1,000P + 상품가격: 10,000P = <br class="for_mob">합계: <span class="fw_800">11,000P</span></p>
+										<div class="wrap_cost">
+											<div class="item">
+												<p class="tit">이더리움</p>
+												<p class="price">16.6 ETH</p>
+											</div>
+											<div class="item">
+												<p class="tit">테더</p>
+												<p class="price">10128 USDT</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<p class="tit">축하금 수령 예시</p>
+									<div class="desc">
+										<div class="wrap_txt tit"><p class="fs_16 fw_700 f_left">고객 수령금액:</p><p class="fs_16 fw_700 f_right">30,000P</p></div>
+										<div class="wrap_txt"><p class="fs_14 f_left"><span class="line"></span>즉시 출금 가능금액:</p><p class="fs_14 f_right">27,000P</p></div>
+										<div class="wrap_txt"><p class="fs_14 f_left"><span class="line"></span>스테이킹 금액:</p><p class="fs_14 f_right">3,000P</p></div>
+										<p class="noti fs_12">*60일 간 스테이킹 진행 후 이자 0.7% 합산하여 지급</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box_item prod_vip">
+							<div class="title_wrap">
+								<img class="ic" src="./images/ic_vip.png">
+								<p class="txt">VIP</p>							
+							</div>
+							<div class="desc_wrap">
+								<p class="txt">부티크 S의 더 클래스 VIP 프로그램은 <span>가입한 원금의 100배</span>에 달하는 축하 수령금을 지급 해드립니다.<br><span>2명의 회원이 모이면 선순번 1명의 축하금 수령자가 발생</span>하는 초고속 기부사이클을 경험해보세요.<br>졸업 후에는 60일간 시온 코인 스테이킹을 통하여 추가적인 수익을 기대할 수 있습니다.</p>
+								<div class="item">
+									<p class="tit">가입안내</p>
+									<div class="desc">
+										<p class="txt">가입비: 10,000P + 상품가격: 100,000P = <br class="for_mob">합계: <span class="fw_800">110,000P</span></p>
+										<div class="wrap_cost">
+											<div class="item">
+												<p class="tit">이더리움</p>
+												<p class="price">166.6 ETH</p>
+											</div>
+											<div class="item">
+												<p class="tit">테더</p>
+												<p class="price">101280 USDT</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<p class="tit">축하금 수령 예시</p>
+									<div class="desc">
+										<div class="wrap_txt tit"><p class="fs_16 fw_700 f_left">고객 수령금액:</p><p class="fs_16 fw_700 f_right">300,000P</p></div>
+										<div class="wrap_txt"><p class="fs_14 f_left"><span class="line"></span>즉시 출금 가능금액:</p><p class="fs_14 f_right">270,000P</p></div>
+										<div class="wrap_txt"><p class="fs_14 f_left"><span class="line"></span>스테이킹 금액:</p><p class="fs_14 f_right">30,000P</p></div>
+										<p class="noti fs_12">*60일 간 스테이킹 진행 후 이자 0.7% 합산하여 지급</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wrap_btns_tab">
+							<button class="tbtn_prod_normal on">
+								<img class="ic" src="./images/ic_normal.png"><p class="txt">일반형</p>
+							</button>
+							<button class="tbtn_prod_advanced">
+								<img class="ic" src="./images/ic_advanced.png"><p class="txt">고급형</p>
+							</button>
+							<button class="tbtn_prod_vip">
+								<img class="ic" src="./images/ic_vip.png"><p class="txt">VIP</p>
+							</button>
+						</div>
+					</div>
+					<div class="box_item">
+						<div class="title_wrap">
+							<img class="ic" src="./images/ic_docu_white.png">
+							<p class="txt">가입신청</p>							
+						</div>
+						<div class="wrap_inputs">
+							<div class="item">
+								<p class="tit">입금주소</p>
+								<div class="input_wrap with_copy">
+									<div class="wrap_copy">
+										<p class="tit">이더리움(ETH)</p>
+										<input type="text" name="" value="0x6870a3576753f48834c65b7ffae74c3a32a0c477" readonly>
+										<button class="btn_copy">주소복사</button>
+									</div>
+									<div class="wrap_copy">
+										<p class="tit">테더(USDT)</p>
+										<input type="text" name="" value="0x6870a3576753f48834c65b7ffae74c3a32a0c477" readonly>
+										<button class="btn_copy">주소복사</button>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">상품선택</p>
+								<div class="input_wrap radio">
+									<label><input type="radio" name="selProd" checked><span>일반형</span></label>
+									<label><input type="radio" name="selProd"><span>고급형</span></label>
+									<label><input type="radio" name="selProd"><span>VIP</span></label>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">입금화폐</p>
+								<div class="input_wrap radio">
+									<label><input type="radio" name="selCurr" checked><span>ETH(이더리움)</span></label>
+									<label><input type="radio" name="selCurr"><span>USDT(테더)</span></label>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">입금금액</p>
+								<div class="input_wrap">
+									<input type="text" name="" placeholder="입금주소로 전송한 USDT 또는 ETH의 수량을 입력해 주세요.">
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">입금TXID</p>
+									<div class="input_wrap">
+									<input type="text" name="" placeholder="입금주소로 전송한 TXID를 입력해 주세요. (예, 0x00000...)">
+								</div>
+							</div>
+							<button class="btn_confirm">신청하기</button>
+							<p class="noti_subs">* 입금신청 시간 기준으로 30분이 경과되면 시세 변동성에 의해서 입금신청이 자동으로 취소 됩니다.</p>
+							<p class="noti_subs">* 상품 가입은 이용약관에 동의한것으로 간주합니다.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+</body>
+</html>
