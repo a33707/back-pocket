@@ -170,7 +170,7 @@ $(document).ready( function() {
 	    $(".wrap_boxes.subscription .wrap_subs .box_item").show();
 		};
 	};
-	$(window).resize(desMobile);
+	// $(window).resize(desMobile);
 	$(document).ready(desMobile);
 
 
