@@ -11,6 +11,7 @@
 <script src="./js/boutiques.js"></script>
 </head>
 <body class="login" style="background-color: #666;">
+	<div id="particle-canvas"></div>
 	<div class="wrap_account">
 		<div class="logo_login">
 			<img class="img_logo" src="./images/img_logo_vertical.png">
@@ -50,4 +51,16 @@
 		</video>
 	</div>
 </body>
+<script type="text/javascript" src="js/particle-network.min.js"></script>
+<script type="text/javascript">
+	var canvasDiv = document.getElementById('particle-canvas');
+	var options = {
+		particleColor: '#fff',
+		background: './images/trans.png',
+		interactive: true,
+		speed: 'midium',
+		density: 'midium'
+	};
+	var particleCanvas = new ParticleNetwork(canvasDiv, options);
+</script>
 </html>

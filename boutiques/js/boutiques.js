@@ -107,7 +107,7 @@ $(document).ready( function() {
 		$("html").animate( { scrollTop : total }, 600);
 	});
 
-  $("#layerPopup").hide();
+  // $("#layerPopup").hide();
   $(".btn_popup_open").click(function(){
     $(".btn_popup_open").blur();
     $("#layerPopup").show();

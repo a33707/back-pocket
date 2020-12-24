@@ -141,6 +141,12 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 .width_60 {width: 60% !important;}
 .width_70 {width: 70% !important;}
 
+#particle-canvas {
+	position: absolute !important;
+	width:100%;
+	height:100%;
+	z-index: 1;
+}
 .vid_bg_wrap {width: auto; height: 100vh; position: relative; background-color: #2F3140;}
 /*.vid_bg_wrap:before {width: 100%; height: 100%; content: ""; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1;background-color: rgba(0,0,0,0.3);}*/
 .vid_bg_wrap .vid_bg_account {min-width: 100%; min-height: 100%; position: absolute; left: 50%; transform: translateX(-50%);}
@@ -160,6 +166,7 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 .wrap_account .wrap_login .input_psw .tit {font-size: 14px; line-height: 48px; color: #fff; float: left; padding-left: 14px;}
 .btn_forgot {text-decoration: underline; text-underline-position: under; font-weight: 700; float: right; color: #fff; font-size: 12px; line-height: 18px;}
 .btn_login {width: 100%; line-height: 48px; border-radius: 100px; background-color: #E2943D; text-align: center; font-size: 16px; font-weight: 700; display: block; color: #fff; margin-top: 32px;}
+.btn_login:hover {background-color: #DB7B0D;}
 .wrap_signup {width: 100%; text-align: center;}
 .wrap_signup .noti {display: inline-block; color: #fff; line-height: 48px; font-size: 14px;}
 .wrap_signup .btn_create {display: inline-block; font-weight: 700; text-decoration: underline; text-underline-position: under; color: #fff; line-height: 48px; font-size: 14px;}
@@ -167,7 +174,7 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 .common {background-color: #2F3140;}
 
 .gnb_wrap {position: fixed; top: 0; left: 0; width: 300px; height: 100vh; background-color: #3D415E; overflow-y: scroll; overflow-x: hidden; z-index: 10;}
-.gnb_wrap:after {content: ""; display: block; width: 12px; height: 100%; background-color: #2F3140; position: absolute; right: 0; top: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px;}
+/*.gnb_wrap:after {content: ""; display: block; width: 12px; height: 100%; background-color: #2F3140; position: absolute; right: 0; top: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px;}*/
 .gnb {}
 .gnb .wrap_logo {width: 220px; height: 49px; margin: 28px 0 35px 24px;}
 .gnb .wrap_logo img {width: 100%; display: block;}
@@ -424,7 +431,7 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 .box_container .wrap_boxes.subscription .wrap_subs .box_item .desc_wrap > .item .desc .wrap_txt .line:before {content: "";border-color: #72779B;border: 1px solid #73779b;border-bottom: none;border-left: none;border-right: none;height: 0px;width: 8px;display: inline-block;margin-bottom: 4px;margin-right: 4px;}
 .box_container .wrap_boxes.subscription .wrap_subs .box_item .desc_wrap > .item .desc .wrap_txt .line {border: 1px solid #73779b;height: 20px;border-right: none;border-top: none;border-bottom: none;display: inline-block;}
 
-.pop_logout {position: absolute; top: calc(100% + 12px); right: 0; z-index: 999;}
+.pop_logout {display: none; position: absolute; top: calc(100% + 12px); right: 0; z-index: 999;}
 .pop_logout .content {width: 200px; padding: 12px 18px; border-radius: 8px; margin: 0 auto; background-color: #fff;
 -webkit-box-shadow: 4px 4px 12px 0px rgba(0,0,0,1);
 -moz-box-shadow: 4px 4px 12px 0px rgba(0,0,0,1);
@@ -451,6 +458,11 @@ pre {font-size: 12px; line-height: 20px;}
 
 .container {min-width: auto; width: 100%; left: 0; padding: 0 16px 24px;}
 .common .overlay {display: none; width: 112px; height: 100vh; content: ""; background-color: rgba(0,0,0,0.5); z-index: 1; position: absolute; right: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px;}
+.common .overlay img {position: absolute;top: 50%;transform: translateY(-50%);left: 0;right: 0;margin: 0 auto;width: 40px;height: 40px;background-color: #fff;padding: 8px;border-radius: 40px;
+-webkit-box-shadow: 4px 4px 12px 0px rgba(0,0,0,1);
+-moz-box-shadow: 4px 4px 12px 0px rgba(0,0,0,1);
+box-shadow: 4px 4px 12px 0px rgba(0,0,0,1);
+}
 .gnb_wrap {display: none; width: calc(100% - 100px);}
 .gnb .wrap_logo {margin: 16px 0 16px 16px; width: 166px; height: 37px;}
 .gnb .menus .item {height: 42px; padding: 0 36px 0 16px}
