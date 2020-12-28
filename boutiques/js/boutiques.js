@@ -1,4 +1,11 @@
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(document).ready( function() {
+if(!isMobile) {
+	alert("PC");
+} else {
+	alert("Mobile");
+};
+
 // 모바일 메뉴 여닫기
 	$(".btn_drawer").click(function(){
 		$(".gnb_wrap").show();
