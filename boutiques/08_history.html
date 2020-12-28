@@ -16,6 +16,12 @@ $(document).ready( function() {
 		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
 		$('<script src="./js/boutiquesM.js" />').appendTo('head');
 	};
+	$('<button class="btn_turnM">모바일 버전</button>').prependTo('body');
+	$('.btn_turnM').click(function(){
+		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+		$('<script src="./js/boutiquesM.js" />').appendTo('head');
+		$(this).remove();
+	});
 });
 	</script>
 </head>

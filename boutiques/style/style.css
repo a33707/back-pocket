@@ -172,7 +172,11 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 .wrap_signup .btn_create {display: inline-block; font-weight: 700; text-decoration: underline; text-underline-position: under; color: #fff; line-height: 48px; font-size: 14px;}
 
 .common {background-color: #2F3140;}
-
+.btn_turnM {display: none;width: 100%;height: 48px;background: rgba(255,255,255,0.8);text-align: center;font-size: 20px;z-index: 999;position: absolute;}
+.btn_turnM:hover {background: rgba(255,255,255,1);}
+@media (max-width:640px) {
+.btn_turnM {display: block;}
+}
 .gnb_wrap {position: fixed; top: 0; left: 0; width: 300px; height: 100vh; background-color: #3D415E; overflow-y: scroll; overflow-x: hidden; z-index: 10;}
 /*.gnb_wrap:after {content: ""; display: block; width: 12px; height: 100%; background-color: #2F3140; position: absolute; right: 0; top: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px;}*/
 .gnb {}
