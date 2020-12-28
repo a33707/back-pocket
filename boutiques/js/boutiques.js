@@ -1,3 +1,5 @@
+$(document).ready(function(){
+	
 // 모바일 메뉴 여닫기
 	$(".btn_drawer").click(function(){
 		$(".gnb_wrap").show();
