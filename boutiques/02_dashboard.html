@@ -13,14 +13,8 @@
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(document).ready( function() {
 	if(isMobile) {
-		$('<link rel="stylesheet" type="text/css" />', {
-		       rel: 'stylesheet',
-		       type: 'text/css',
-		       href: './style/styleM.css'
-		}).appendTo('head');
-		$('<script src="./js/boutiquesM.js" />', {
-		       href: './js/boutiquesM.js'
-		}).appendTo('head');
+		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+		$('<script src="./js/boutiquesM.js" />').appendTo('head');
 	};
 });
 	</script>
