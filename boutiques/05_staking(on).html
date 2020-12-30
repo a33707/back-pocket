@@ -33,7 +33,7 @@ $(document).ready( function() {
 				<li class="item"><button onclick="location.href='./02_dashboard.html'"><img class="ic_menu_item" src="./images/ic_dash_off.png"><p class="txt">대쉬보드</p></button></li>
 				<li class="item"><button onclick="location.href='./03_subscription.html'"><img class="ic_menu_item" src="./images/ic_docu_off.png"><p class="txt">상품가입</p></button></li>
 				<li class="item"><button onclick="location.href='./04_withdraw.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">수당출금</p></button></li>
-				<li class="item on"><button onclick="location.href='./05_staking.html'"><img class="ic_menu_item" src="./images/ic_wallet_on.png"><p class="txt">스테이킹</p></button></li>
+				<li class="item on"><button onclick="location.href='./05_staking(on).html'"><img class="ic_menu_item" src="./images/ic_wallet_on.png"><p class="txt">스테이킹</p></button></li>
 				<li class="item"><button onclick="location.href='./06_incentive.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">인센티브 출금</p></button></li>
 				<li class="item"><button onclick="location.href='./07_investinfo_list.html'"><img class="ic_menu_item" src="./images/ic_info_off.png"><p class="txt">투자전략</p></button></li>
 				<li class="item"><button onclick="location.href='./08_history.html'"><img class="ic_menu_item" src="./images/ic_receipt_off.png"><p class="txt">수당내역</p></button></li>
@@ -91,14 +91,155 @@ $(document).ready( function() {
 				<p class="txt">스테이킹</p>
 			</div>
 			<div class="box_container">
-				<div class="wrap_boxes b2">
+				<div class="wrap_boxes b1 header_staking">
 					<div class="box_item">
-
+						<p class="state_pull on">현재 <span class="count">5개</span>의 풀이 가동중 입니다.</p>
+						<div class="wrap_currency">
+							<p class="tit">현재 시온코인 시세 :</p>
+							<p class="desc">1 SHION = 1,000 KRW</p>
+						</div>
+					</div>
+				</div>
+				<div class="wrap_boxes b2 item_pull">
+					<div class="box_item">
+						<div class="wrap_info">
+							<div class="item identify">
+								<p class="tit">풀 ID</p>
+								<p>5</p>
+							</div>
+							<div class="item point">
+								<p class="tit">현재거치 / 만기예정</p>
+								<div class="progress">
+									<p class="f_left">803P</p>
+									<p class="f_right">809P</p>
+									<div class="bar"><span class="now" style="width: 78%;"></span></div>
+									<p class="noti">거치이율 0.7%</p>
+								</div>
+							</div>
+							<div class="item date">
+								<div class="inner">
+									<p class="tit">시작</p>
+									<p>2020-10-30<br>17:06:50</p>
+								</div>
+								<p class="both">~</p>
+								<div class="inner">
+									<p class="tit">종료</p>
+									<p>2020-12-29<br>17:06:50</p>
+								</div>
+							</div>
+						</div>
+						<div class="wrap_inputs">
+							<div class="item">
+								<p class="tit">출금 시온코인</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="768 SHION" readonly>
+									<p class="noti">출금수수료 5%가 공제됩니다. (-40 P)</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">시온코인 지갑주소 (ERC20)</p>
+								<div class="input_wrap">
+									<input type="text" name="" placeholder="시온코인 지갑 주소를 입력하세요.">
+								</div>
+							</div>
+							<button class="btn_confirm">출금 신청하기</button>
+						</div>
+						<button class="btn_fold_submit"><p><span>출금 신청</span><img class="img_fold" src="./images/ic_fold_closed.png"></p></button>
+					</div>
+					<div class="box_item">
+						<div class="wrap_info">
+							<div class="item identify">
+								<p class="tit">풀 ID</p>
+								<p>5</p>
+							</div>
+							<div class="item point">
+								<p class="tit">현재거치 / 만기예정</p>
+								<div class="progress">
+									<p class="f_left">803P</p>
+									<p class="f_right">809P</p>
+									<div class="bar"><span class="now" style="width: 78%;"></span></div>
+									<p class="noti">거치이율 0.7%</p>
+								</div>
+							</div>
+							<div class="item date">
+								<div class="inner">
+									<p class="tit">시작</p>
+									<p>2020-10-30<br>17:06:50</p>
+								</div>
+								<p class="both">~</p>
+								<div class="inner">
+									<p class="tit">종료</p>
+									<p>2020-12-29<br>17:06:50</p>
+								</div>
+							</div>
+						</div>
+						<div class="wrap_inputs">
+							<div class="item">
+								<p class="tit">출금 시온코인</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="768 SHION" readonly>
+									<p class="noti">출금수수료 5%가 공제됩니다. (-40 P)</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">시온코인 지갑주소 (ERC20)</p>
+								<div class="input_wrap">
+									<input type="text" name="" placeholder="시온코인 지갑 주소를 입력하세요.">
+								</div>
+							</div>
+							<button class="btn_confirm" disabled>신청이 불가능 합니다.</button>
+						</div>
+						<button class="btn_fold_submit"><p><span>출금 신청</span><img class="img_fold" src="./images/ic_fold_closed.png"></p></button>
+					</div>
+					<div class="box_item">
+						<div class="wrap_info">
+							<div class="item identify">
+								<p class="tit">풀 ID</p>
+								<p>5</p>
+							</div>
+							<div class="item point">
+								<p class="tit">현재거치 / 만기예정</p>
+								<div class="progress">
+									<p class="f_left">803P</p>
+									<p class="f_right">809P</p>
+									<div class="bar"><span class="now" style="width: 78%;"></span></div>
+									<p class="noti">거치이율 0.7%</p>
+								</div>
+							</div>
+							<div class="item date">
+								<div class="inner">
+									<p class="tit">시작</p>
+									<p>2020-10-30<br>17:06:50</p>
+								</div>
+								<p class="both">~</p>
+								<div class="inner">
+									<p class="tit">종료</p>
+									<p>2020-12-29<br>17:06:50</p>
+								</div>
+							</div>
+						</div>
+						<div class="wrap_inputs">
+							<div class="item">
+								<p class="tit">출금 시온코인</p>
+								<div class="input_wrap">
+									<input type="text" name="" value="768 SHION" readonly>
+									<p class="noti">출금수수료 5%가 공제됩니다. (-40 P)</p>
+								</div>
+							</div>
+							<div class="item">
+								<p class="tit">시온코인 지갑주소 (ERC20)</p>
+								<div class="input_wrap">
+									<input type="text" name="" placeholder="시온코인 지갑 주소를 입력하세요.">
+								</div>
+							</div>
+							<button class="btn_confirm">출금 신청하기</button>
+						</div>
+						<button class="btn_fold_submit"><p><span>출금 신청</span><img class="img_fold" src="./images/ic_fold_closed.png"></p></button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="overlay"></div>
+	<div class="overlay"><img src="./images/ic_backward.png"></div>
 </body>
 </html>

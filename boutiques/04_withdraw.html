@@ -33,7 +33,7 @@ $(document).ready( function() {
 				<li class="item"><button onclick="location.href='./02_dashboard.html'"><img class="ic_menu_item" src="./images/ic_dash_off.png"><p class="txt">대쉬보드</p></button></li>
 				<li class="item"><button onclick="location.href='./03_subscription.html'"><img class="ic_menu_item" src="./images/ic_docu_off.png"><p class="txt">상품가입</p></button></li>
 				<li class="item on"><button onclick="location.href='./04_withdraw.html'"><img class="ic_menu_item" src="./images/ic_save_on.png"><p class="txt">수당출금</p></button></li>
-				<li class="item"><button onclick="location.href='./05_staking.html'"><img class="ic_menu_item" src="./images/ic_wallet_off.png"><p class="txt">스테이킹</p></button></li>
+				<li class="item"><button onclick="location.href='./05_staking(on).html'"><img class="ic_menu_item" src="./images/ic_wallet_off.png"><p class="txt">스테이킹</p></button></li>
 				<li class="item"><button onclick="location.href='./06_incentive.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">인센티브 출금</p></button></li>
 				<li class="item"><button onclick="location.href='./07_investinfo_list.html'"><img class="ic_menu_item" src="./images/ic_info_off.png"><p class="txt">투자전략</p></button></li>
 				<li class="item"><button onclick="location.href='./08_history.html'"><img class="ic_menu_item" src="./images/ic_receipt_off.png"><p class="txt">수당내역</p></button></li>
@@ -154,7 +154,7 @@ $(document).ready( function() {
 									<input type="text" name="" placeholder="출금 비밀번호를 입력하세요.">
 								</div>
 							</div>
-							<button class="btn_confirm">신청하기</button>
+							<button class="btn_confirm" disabled>신청이 불가능 합니다.</button>
 						</div>
 					</div>
 					<div class="box_item prod_advanced">
@@ -184,7 +184,7 @@ $(document).ready( function() {
 							<div class="item">
 								<p class="tit">스테이킹 예상금액</p>
 								<div class="input_wrap">
-									<input type="text" name="" value="일반형은 스테이킹을 지원하지 않습니다." readonly>
+									<input type="text" name="" value="0 P" readonly>
 								</div>
 							</div>
 							<div class="item">
@@ -249,7 +249,7 @@ $(document).ready( function() {
 							<div class="item">
 								<p class="tit">스테이킹 예상금액</p>
 								<div class="input_wrap">
-									<input type="text" name="" value="일반형은 스테이킹을 지원하지 않습니다." readonly>
+									<input type="text" name="" value="VIP는 스테이킹을 지원하지 않습니다." readonly>
 								</div>
 							</div>
 							<div class="item">
@@ -302,6 +302,6 @@ $(document).ready( function() {
 			</div>
 		</div>
 	</div>
-	<div class="overlay"></div>
+	<div class="overlay"><img src="./images/ic_backward.png"></div>
 </body>
 </html>

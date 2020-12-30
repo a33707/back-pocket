@@ -127,6 +127,20 @@ $(document).ready(function(){
     $("#layerPopup").hide();
   });
 
+// 출금신청 접기펴기
+	$(".box_container .wrap_boxes.item_pull .btn_fold_submit").click(function(){
+		var imgRoot = $(this).find($(".img_fold")).attr("src");
+		var turnOpen = imgRoot.replace("closed", "opened");
+		var turnClose = imgRoot.replace("opened", "closed");
+		if ($(this).siblings(".wrap_inputs").css("display") === "none") {
+			$(this).siblings(".wrap_inputs").show();
+			$(this).find($(".img_fold")).attr("src", turnOpen);
+		} else {
+			$(this).siblings(".wrap_inputs").hide();
+			$(this).find($(".img_fold")).attr("src", turnClose);
+		};
+	});
+
 ////// 반응형
 var countItemlist = $(".wrap_boxes.board_history .list .content .item").size();
 var countGradulist = $(".box_container .wrap_boxes.graduated .box_item .wrap_list li").size();
@@ -146,7 +160,6 @@ for(i = 0; i < countGradulist ; i++){
 $(".wrap_boxes.subscription .wrap_subs .wrap_btns_tab").appendTo(".wrap_boxes.subscription .wrap_subs");
 $(".wrap_boxes.subscription .wrap_subs .box_item").show();
 
-
-
+$(".state_pull").after($(".wrap_currency"));
 
 });

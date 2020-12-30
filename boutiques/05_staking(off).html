@@ -33,16 +33,16 @@ $(document).ready( function() {
 				<li class="item"><button onclick="location.href='./02_dashboard.html'"><img class="ic_menu_item" src="./images/ic_dash_off.png"><p class="txt">대쉬보드</p></button></li>
 				<li class="item"><button onclick="location.href='./03_subscription.html'"><img class="ic_menu_item" src="./images/ic_docu_off.png"><p class="txt">상품가입</p></button></li>
 				<li class="item"><button onclick="location.href='./04_withdraw.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">수당출금</p></button></li>
-				<li class="item"><button onclick="location.href='./05_staking(on).html'"><img class="ic_menu_item" src="./images/ic_wallet_off.png"><p class="txt">스테이킹</p></button></li>
+				<li class="item on"><button onclick="location.href='./05_staking(on).html'"><img class="ic_menu_item" src="./images/ic_wallet_on.png"><p class="txt">스테이킹</p></button></li>
 				<li class="item"><button onclick="location.href='./06_incentive.html'"><img class="ic_menu_item" src="./images/ic_save_off.png"><p class="txt">인센티브 출금</p></button></li>
 				<li class="item"><button onclick="location.href='./07_investinfo_list.html'"><img class="ic_menu_item" src="./images/ic_info_off.png"><p class="txt">투자전략</p></button></li>
 				<li class="item"><button onclick="location.href='./08_history.html'"><img class="ic_menu_item" src="./images/ic_receipt_off.png"><p class="txt">수당내역</p></button></li>
 				<li class="item"><button onclick="location.href='./09_member_list.html'"><img class="ic_menu_item" src="./images/ic_member_off.png"><p class="txt">하부 리스트</p></button></li>
 				<li class="item"><button onclick="location.href='./10_introduce.html'"><img class="ic_menu_item" src="./images/ic_logo_off.png"><p class="txt">소개</p></button></li>
-				<li class="item pare"><button><img class="ic_menu_item" src="./images/ic_notice_off.png"><p class="txt">고객센터</p><img class="ic_fold" src="./images/ic_fold_opened.png"></button></li>
-				<li class="item chil" style="display: list-item;"><button onclick="location.href='./12_notice_list.html'"><p class="txt">공지사항</p></button></li>
-				<li class="item chil" style="display: list-item;"><button onclick="location.href='./13_faq.html'"><p class="txt">FAQ</p></button></li>
-				<li class="item chil on" style="display: list-item;"><button onclick="location.href='./14_video_list.html'"><p class="txt">동영상</p></button></li>
+				<li class="item pare"><button><img class="ic_menu_item" src="./images/ic_notice_off.png"><p class="txt">고객센터</p><img class="ic_fold" src="./images/ic_fold_closed.png"></button></li>
+				<li class="item chil"><button onclick="location.href='./12_notice_list.html'"><p class="txt">공지사항</p></button></li>
+				<li class="item chil"><button onclick="location.href='./13_faq.html'"><p class="txt">FAQ</p></button></li>
+				<li class="item chil"><button onclick="location.href='./14_video_list.html'"><p class="txt">동영상</p></button></li>
 			</ul>
 			<div class="foot">
 				<div class="btns_lang">
@@ -88,68 +88,19 @@ $(document).ready( function() {
 		</div>
 		<div class="main_wrap">
 			<div class="title_txt_page">
-				<p class="txt">소개영상</p>
+				<p class="txt">스테이킹</p>
 			</div>
 			<div class="box_container">
-				<div class="wrap_boxes b1 video">
+				<div class="wrap_boxes b1 header_staking">
 					<div class="box_item">
-						<iframe src="https://www.youtube.com/embed/VMAPTo7RVCo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p class="state_pull off">현재 <span class="count">5개</span>의 풀이 가동중 입니다.</p>
+						<div class="wrap_currency">
+							<p class="tit">현재 시온코인 시세 :</p>
+							<p class="desc">1 SHION = 1,000 KRW</p>
+						</div>
 					</div>
 				</div>
-				<div class="wrap_boxes b1 video">
-					<div class="box_item">
-						<ul class="list_wrap">
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-							<li class="item" onclick="location.href='./14_video_detail.html'">
-								<p class="tit">가상자산 거래 따라하기 (간편거래)</p>
-								<img class="thumb" src="./images/sample_thumb.jpg">
-							</li>
-						</ul>
-					</div>
-				</div>
+				<p class="noti_staking_off">가동중인 풀이 없습니다.</p>
 			</div>
 		</div>
 	</div>
