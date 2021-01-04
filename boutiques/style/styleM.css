@@ -76,7 +76,7 @@ box-shadow: 4px 4px 18px 0px rgba(0,0,0,0.4);
 .box_container .wrap_boxes.product .box_item .title_wrap {display: none;}
 .box_container .wrap_boxes .wrap_btns_tab {display: block; width: 100%; border-top-left-radius: 8px; border-top-right-radius: 8px; overflow: hidden;}
 .box_container .wrap_boxes .wrap_btns_tab:after {clear: both; content: ""; display: block;}
-.box_container .wrap_boxes .wrap_btns_tab > button {width: 33.333%; float: left; background-color: #50546E; text-align: center; border-radius: 0;}
+.box_container .wrap_boxes .wrap_btns_tab > button {width: 33.333%; float: left; background-color: #50546E; text-align: center; border-radius: 0; margin: 0;}
 .box_container .wrap_boxes .wrap_btns_tab > button:focus {outline: none;}
 .box_container .wrap_boxes .wrap_btns_tab > button.on {background-color: #3D415E;}
 .box_container .wrap_boxes .wrap_btns_tab > button > .ic {opacity: 0.3; display: inline-block; width: 20px; height: 20px; vertical-align: sub; margin-right: 4px;}

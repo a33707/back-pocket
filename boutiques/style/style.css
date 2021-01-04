@@ -55,13 +55,10 @@ a, button {
 	text-decoration: none;
 	color: inherit;
 }
-/*select {
-	-webkit-appearance: none;-moz-appearance: none;appearance: none;
-}*/
 select::-ms-expand {
    display: none;            
 }
-
+body {-webkit-text-size-adjust: none;}
 * {
 	font-family: 'NanumSquare','맑은고딕',MalgunGothic,AppleSDGothicNeo-Medium,HelveticaNeue,sans-serif;
 	box-sizing: border-box;
