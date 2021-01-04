@@ -10,19 +10,36 @@
 	<script src="./js/jquery-2.2.4.min.js"></script>
 	<script src="./js/boutiques.js"></script>
 	<script type="text/javascript">
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 $(document).ready( function() {
-	if(isMobile) {
-		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
-		$('<script src="./js/boutiquesM.js" />').appendTo('head');
-	};
-	// $('<button class="btn_turnM">모바일 버전</button>').prependTo('body');
-	// $('.btn_turnM').click(function(){
-	// 	$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
-	// 	$('<script src="./js/boutiquesM.js" />').appendTo('head');
-	// 	$(this).remove();
-	// });
+	$(window).resize(function desMobile(){
+	  var width_size = $(window).width();
+	  if (width_size <= 640) {
+	  	// mobile
+	  	if ($('link[href="./style/styleM.css"]').length === 0) {
+				$('<link id="cssforMobile" rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+				$('<scrip id="jsforMobile" src="./js/boutiquesM.js" />').appendTo('head');
+	  	};
+	  } else {
+			// PC
+			$('#cssforMobile').remove();
+			$('#jsforMobile').remove();
+	  };
+	});
 });
+
+// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+// $(document).ready( function() {
+// 	if(isMobile) {
+// 		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+// 		$('<script src="./js/boutiquesM.js" />').appendTo('head');
+// 	};
+// 	// $('<button class="btn_turnM">모바일 버전</button>').prependTo('body');
+// 	// $('.btn_turnM').click(function(){
+// 	// 	$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+// 	// 	$('<script src="./js/boutiquesM.js" />').appendTo('head');
+// 	// 	$(this).remove();
+// 	// });
+// });
 	</script>
 </head>
 <body class="common">
@@ -72,7 +89,7 @@ $(document).ready( function() {
 				</div>
 				<div class="head_fn_btns">
 					<button class="btn_alert new" onclick="location.href='./12_notice_list.html'"><img src="./images/ic_alert.png"><p class="ttip">공지사항</p></button>
-					<button class="btn_setting" onclick="location.href='./11_myprofile.html'"><img src="./images/ic_setting.png"><p class="ttip">프로필</p></button>
+					<button class="btn_setting" onclick="location.href='./11_myprofile.html'"><img src="./images/ic_account.png"><p class="ttip">프로필</p></button>
 					<button class="btn_logout btn_popup_open"><img src="./images/ic_power.png"><p class="ttip">로그아웃</p></button>
 					<div id="layerPopup" class="pop_logout">
 						<div class="content">
@@ -100,7 +117,7 @@ $(document).ready( function() {
 								<p class="txt">일반형</p>
 							</div>
 							<div class="desc_wrap">
-								<p class="txt">부티크 S의 더 클래스 일반형 프로그램은 <span>가입한 원금의.5배</span>에 달하는 졸업(수당) 축하금을 지급 해드립니다.<br><span>4명의 1원이 모이면</span> 선순번 1명의 졸업자가 발생하는 초고속 기부사이클을 경험해보세요.</p>
+								<p class="txt">부티크 S의 더 클래스 일반형 프로그램은 <span>가입한 원금의 4배</span>에 달하는 졸업(수당) 축하금을 지급 해드립니다.<br><span>4명의 1원이 모이면</span> 선순번 1명의 졸업자가 발생하는 초고속 기부사이클을 경험해보세요.</p>
 								<div class="item">
 									<p class="tit">가입안내</p>
 									<div class="desc">
@@ -134,7 +151,7 @@ $(document).ready( function() {
 								<p class="txt">고급형</p>
 							</div>
 							<div class="desc_wrap">
-								<p class="txt">부티크 S의 더 클래스 일반형 프로그램은 <span>가입한 원금의.5배</span>에 달하는 졸업(수당) 축하금을 지급 해드립니다.<br><span>3명의 1원이 모이면</span> 선순번 1명의 졸업자가 발생하는 초고속 기부사이클을 경험해보세요.</p>
+								<p class="txt">부티크 S의 더 클래스 일반형 프로그램은 <span>가입한 원금의 3배</span>에 달하는 졸업(수당) 축하금을 지급 해드립니다.<br><span>3명의 1원이 모이면</span> 선순번 1명의 졸업자가 발생하는 초고속 기부사이클을 경험해보세요.</p>
 								<div class="item">
 									<p class="tit">가입안내</p>
 									<div class="desc">

@@ -145,7 +145,7 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 	position: absolute !important;
 	width:100%;
 	height:100%;
-	z-index: 1;
+	z-index: 0;
 }
 .vid_bg_wrap {width: auto; height: 100vh; position: relative; background-color: #2F3140;}
 /*.vid_bg_wrap:before {width: 100%; height: 100%; content: ""; display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 1;background-color: rgba(0,0,0,0.3);}*/
@@ -162,6 +162,7 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
 .wrap_account .wrap_login .input_psw input {border:none; border-radius: 0; float: left; background: transparent; margin: 6px 0; width: 75%;}
 .wrap_account .wrap_login .input_id input::placeholder,
 .wrap_account .wrap_login .input_psw input::placeholder {color: #ddd;}
+.wrap_account .wrap_login .input_psw input {font-family: 'sans-serif';}
 .wrap_account .wrap_login .noti_psw {font-size: 12px; line-height: 18px; color: #F35231; text-align: center;}
 .wrap_account .wrap_login .input_psw .tit {font-size: 14px; line-height: 48px; color: #fff; float: left; padding-left: 14px;}
 .btn_forgot {text-decoration: underline; text-underline-position: under; font-weight: 700; float: right; color: #fff; font-size: 12px; line-height: 18px;}
@@ -183,7 +184,10 @@ hr {border: 1px solid #50546E; border-top: 0; margin: 24px 0;}
     box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.2);
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+    -ms-overflow-style: none;
 }
+.gnb_wrap::-webkit-scrollbar{ display:none; }
+
 /*.gnb_wrap:after {content: ""; display: block; width: 12px; height: 100%; background-color: #2F3140; position: absolute; right: 0; top: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px;}*/
 .gnb {}
 .gnb .wrap_logo {width: 220px; height: 49px; margin: 28px 0 35px 24px;}

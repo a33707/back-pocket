@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @media (max-width:640px) {
+#particle-canvas {z-index: 1;}
 pre {font-size: 12px; line-height: 20px;}
 .wrap_account {width: 312px;}
 .wrap_account .wrap_login .noti_psw {font-size: 11px;}
