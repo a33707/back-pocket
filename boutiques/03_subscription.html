@@ -10,36 +10,36 @@
 	<script src="./js/jquery-2.2.4.min.js"></script>
 	<script src="./js/boutiques.js"></script>
 	<script type="text/javascript">
-$(document).ready( function() {
-	$(window).resize(function desMobile(){
-	  var width_size = $(window).width();
-	  if (width_size <= 640) {
-	  	// mobile
-	  	if ($('link[href="./style/styleM.css"]').length === 0) {
-				$('<link id="cssforMobile" rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
-				$('<scrip id="jsforMobile" src="./js/boutiquesM.js" />').appendTo('head');
-	  	};
-	  } else {
-			// PC
-			$('#cssforMobile').remove();
-			$('#jsforMobile').remove();
-	  };
-	});
-});
-
-// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 // $(document).ready( function() {
-// 	if(isMobile) {
-// 		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
-// 		$('<script src="./js/boutiquesM.js" />').appendTo('head');
-// 	};
-// 	// $('<button class="btn_turnM">모바일 버전</button>').prependTo('body');
-// 	// $('.btn_turnM').click(function(){
-// 	// 	$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
-// 	// 	$('<script src="./js/boutiquesM.js" />').appendTo('head');
-// 	// 	$(this).remove();
-// 	// });
+// 	$(window).resize(function desMobile(){
+// 	  var width_size = $(window).width();
+// 	  if (width_size <= 640) {
+// 	  	// mobile
+// 	  	if ($('link[href="./style/styleM.css"]').length === 0) {
+// 				$('<link id="cssforMobile" rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+// 				$('<scrip id="jsforMobile" src="./js/boutiquesM.js" />').appendTo('head');
+// 	  	};
+// 	  } else {
+// 			// PC
+// 			$('#cssforMobile').remove();
+// 			$('#jsforMobile').remove();
+// 	  };
+// 	});
 // });
+
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+$(document).ready( function() {
+	if(isMobile) {
+		$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+		$('<script src="./js/boutiquesM.js" />').appendTo('head');
+	};
+	// $('<button class="btn_turnM">모바일 버전</button>').prependTo('body');
+	// $('.btn_turnM').click(function(){
+	// 	$('<link rel="stylesheet" type="text/css" href="./style/styleM.css" />').appendTo('head');
+	// 	$('<script src="./js/boutiquesM.js" />').appendTo('head');
+	// 	$(this).remove();
+	// });
+});
 	</script>
 </head>
 <body class="common">
